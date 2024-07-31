@@ -471,3 +471,38 @@ body > section {
   color: #4CB8B3;
   font-weight: bold;
 }
+
+.lineup {
+  background-color: #F53756;
+}
+.lineup h3,
+.lineup .dia {
+  color: #FFFFFF;
+}
+.lineup .dia {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+@media (min-width: 769px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.escenarios-contenedor .nombre-escenario {
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+li {
+  font-weight: bold;
+  padding: 2.5rem;
+}
+li span {
+  font-weight: 400;
+}
