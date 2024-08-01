@@ -33,11 +33,31 @@
 
 }
 
-li {
-    font-weight: bold;
-    padding: 2.5rem;
+.calendario{
+    @include m.resetear-lista;
 
-    span {
-        font-weight: 400;
+    li {
+        font-weight: bold;
+        padding: 2.5rem;
+    
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.bg-amarillo{
+    background-color: v.$amarillo;
+
+    li:nth-child(odd) {
+        background-color: lighten(v.$amarillo, 5%);
+    }
+}
+
+.bg-verde{
+    background-color: v.$verde;
+
+    li:nth-child(odd) {
+        background-color: lighten(v.$verde, 5%);
     }
 }

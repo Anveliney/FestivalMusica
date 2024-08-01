@@ -499,10 +499,29 @@ body > section {
   text-transform: uppercase;
 }
 
-li {
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
   font-weight: bold;
   padding: 2.5rem;
 }
-li span {
+.calendario li span {
   font-weight: 400;
+}
+
+.bg-amarillo {
+  background-color: #fdda00;
+}
+.bg-amarillo li:nth-child(odd) {
+  background-color: #ffdf18;
+}
+
+.bg-verde {
+  background-color: #4CB8B3;
+}
+.bg-verde li:nth-child(odd) {
+  background-color: #5ebfbb;
 }
