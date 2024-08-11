@@ -525,3 +525,10 @@ body > section {
 .bg-verde li:nth-child(odd) {
   background-color: #5ebfbb;
 }
+
+.contenedor-boletos {
+  background-color: #4CB8B3;
+}
+.contenedor-boletos h3 {
+  color: #FFFFFF;
+}

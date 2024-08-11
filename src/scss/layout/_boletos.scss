@@ -1,0 +1,14 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.contenedor-boletos{
+    background-color: v.$verde;
+
+    h3{
+        color: v.$blanco;
+    }
+}
+
+.boletos {
+    @include
+}
