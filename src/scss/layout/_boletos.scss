@@ -1,14 +1,34 @@
 @use '../base/mixins' as m;
 @use '../base/variables' as v;
 
-.contenedor-boletos{
+.contenedor-boletos {
     background-color: v.$verde;
 
-    h3{
+    h3 {
         color: v.$blanco;
     }
 }
 
 .boletos {
-    @include
+    @include m.grid(2, 5rem);
+}
+
+.pase {
+    .pase-nombre, .pase-header p {
+        color: v.$blanco;
+        text-align: center;
+        
+    }
+
+    .pase-nombre{
+        font-weight: 700;
+        font-size: 3.5rem;
+    }
+
+    .pase-header p{
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        background-color: v.$rosa;
+        padding: 1rem 0;
+    }
 }

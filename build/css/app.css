@@ -532,3 +532,24 @@ body > section {
 .contenedor-boletos h3 {
   color: #FFFFFF;
 }
+
+.boletos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.pase .pase-nombre, .pase .pase-header p {
+  color: #FFFFFF;
+  text-align: center;
+}
+.pase .pase-nombre {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.pase .pase-header p {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  background-color: #F53756;
+  padding: 1rem 0;
+}
