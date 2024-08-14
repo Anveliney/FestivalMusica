@@ -552,4 +552,15 @@ body > section {
   font-size: 2.5rem;
   background-color: #F53756;
   padding: 1rem 0;
+  margin: 0;
+}
+.pase .pase-body ul {
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase .pase-body ul li {
+  padding: 2rem;
+  border-bottom: 0.1rem solid #CDCDCD;
 }

@@ -30,5 +30,16 @@
         font-size: 2.5rem;
         background-color: v.$rosa;
         padding: 1rem 0;
+        margin: 0;
+    }
+
+    .pase-body ul{
+        background-color: v.$blanco;
+        @include m.resetear-lista;
+
+        li{
+            padding: 2rem;
+            border-bottom: 0.1rem solid v.$gris_claro;
+        }
     }
 }
