@@ -539,7 +539,7 @@ body > section {
   gap: 5rem;
 }
 
-.pase .pase-nombre, .pase .pase-header p {
+.pase .pase-nombre, .pase .pase-header p, .pase .pase-footer {
   color: #FFFFFF;
   text-align: center;
 }
@@ -554,13 +554,28 @@ body > section {
   padding: 1rem 0;
   margin: 0;
 }
-.pase .pase-body ul {
+
+.pase-body ul {
   background-color: #FFFFFF;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.pase .pase-body ul li {
+.pase-body ul li {
   padding: 2rem;
   border-bottom: 0.1rem solid #CDCDCD;
+}
+
+.pase-footer {
+  background-color: #FFFFFF;
+  padding: 3rem;
+}
+.pase-footer p {
+  margin: 0;
+  background-color: #752F97;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
 }

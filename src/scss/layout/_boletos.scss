@@ -14,7 +14,7 @@
 }
 
 .pase {
-    .pase-nombre, .pase-header p {
+    .pase-nombre, .pase-header p, .pase-footer {
         color: v.$blanco;
         text-align: center;
         
@@ -33,13 +33,30 @@
         margin: 0;
     }
 
-    .pase-body ul{
-        background-color: v.$blanco;
-        @include m.resetear-lista;
+}
 
-        li{
-            padding: 2rem;
-            border-bottom: 0.1rem solid v.$gris_claro;
-        }
+.pase-body ul{
+    background-color: v.$blanco;
+    @include m.resetear-lista;
+
+    li{
+        padding: 2rem;
+        border-bottom: 0.1rem solid v.$gris_claro;
     }
 }
+
+.pase-footer{
+    background-color: v.$blanco;
+    padding: 3rem;
+
+    p{
+        margin: 0;
+        background-color: v.$morado;
+        color: v.$blanco;
+        font-weight: bold;
+        font-size: 2.5rem;
+        border-radius: 0.5rem;
+        padding: 1rem 0;
+    }
+}
+
