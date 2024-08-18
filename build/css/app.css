@@ -332,12 +332,6 @@ p {
   line-height: 1.5;
 }
 
-.contenedor {
-  width: 95%;
-  max-width: 120rem;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
 }
@@ -485,6 +479,11 @@ body > section {
   font-size: 3rem;
 }
 
+.escenarios-contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
 @media (min-width: 769px) {
   .escenarios-contenedor {
     display: grid;
@@ -532,11 +531,17 @@ body > section {
 .contenedor-boletos h3 {
   color: #FFFFFF;
 }
-
-.boletos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
+.contenedor-boletos .boletos {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .contenedor-boletos .boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
 }
 
 .pase .pase-nombre, .pase .pase-header p, .pase .pase-footer {

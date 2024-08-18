@@ -7,10 +7,12 @@
     h3 {
         color: v.$blanco;
     }
-}
 
-.boletos {
-    @include m.grid(2, 5rem);
+    .boletos {
+        @include m.contenedor;
+        @include m.tablet{
+            @include m.grid(2, 5rem);}
+    }
 }
 
 .pase {
