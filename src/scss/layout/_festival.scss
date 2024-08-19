@@ -8,6 +8,7 @@
 }
 
 .seccion {
+    @include m.contenedor;
 
     h2 {
         margin-bottom: 2rem;

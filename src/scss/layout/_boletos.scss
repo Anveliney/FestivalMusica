@@ -16,18 +16,23 @@
 }
 
 .pase {
-    .pase-nombre, .pase-header p, .pase-footer {
+    transition: transform 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    &-nombre, &-header p, &-footer {
         color: v.$blanco;
         text-align: center;
         
     }
 
-    .pase-nombre{
-        font-weight: 700;
+    &-nombre{
+        font-weight: 900;
         font-size: 3.5rem;
     }
 
-    .pase-header p{
+    &-header p{
         text-transform: uppercase;
         font-size: 2.5rem;
         background-color: v.$rosa;
@@ -35,30 +40,41 @@
         margin: 0;
     }
 
-}
-
-.pase-body ul{
-    background-color: v.$blanco;
-    @include m.resetear-lista;
-
-    li{
-        padding: 2rem;
-        border-bottom: 0.1rem solid v.$gris_claro;
+    &-body ul{
+        background-color: v.$blanco;
+        @include m.resetear-lista;
+    
+        li{
+            padding: 2rem;
+            border-bottom: 0.1rem solid v.$gris_claro;
+        }
     }
-}
 
-.pase-footer{
-    background-color: v.$blanco;
-    padding: 3rem;
+    &-footer{
+        background-color: v.$blanco;
+        padding: 3rem;
+    
+        p{
+            margin: 0;
+            background-color: v.$morado;
+            color: v.$blanco;
+            font-weight: 900;
+            font-size: 2.8rem;
+            border-radius: 1rem;
+            padding: 1rem 0;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
 
-    p{
-        margin: 0;
-        background-color: v.$morado;
-        color: v.$blanco;
-        font-weight: bold;
-        font-size: 2.5rem;
-        border-radius: 0.5rem;
-        padding: 1rem 0;
+            &:hover{
+                background-color: darken(v.$morado, 20);
+            }
+        }
+
+
+
+        
     }
+
 }
+
 
