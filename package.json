@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "gulp"
   },
   "author": "",
   "license": "ISC",
