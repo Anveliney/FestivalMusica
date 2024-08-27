@@ -1,0 +1,8 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.galeria{
+    &-imagenes{
+        @include m.grid(2, 5rem);
+    }
+}
