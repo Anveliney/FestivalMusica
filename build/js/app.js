@@ -10,11 +10,25 @@ function crearGaleria(){
         const imagen = document.createElement('IMG');
         imagen.src = `src/img/gallery/full/${i}.jpg`
         imagen.alt = `Imagen Galeria`
-        imagen.class = ``
+        imagen.class = `Imagen Galeria`
+
+        //Event Handler
+        imagen.onclick = function (){
+            mostrarImagen(i)
+        }
+
 
         galeria.appendChild(imagen);
-
-        console.log(imagen);
-        
     }
+}
+
+function mostrarImagen (i){
+    
+    //Generar Modal
+    const modal = document.createElement('DIV');
+    modal.classList.add('modal');
+
+    //Agregar al HTML
+    console.log(modal);
+
 }
